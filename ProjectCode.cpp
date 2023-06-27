@@ -955,7 +955,7 @@ int counter2 = sec;
     //
     while (!_kbhit()) { 
         cout <<"\r                                      "<< counter1<<":"<< counter2 << "seconds" << flush;
-       // this_thread::sleep_for(std::chrono::seconds(1));
+       
        Sleep(1000);
         counter2--;  
         if(counter1==0 && counter2==-1) {throw 505;}
